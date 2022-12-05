@@ -1,0 +1,43 @@
+/* iPad Pro */
+@media only screen and (max-width: 1025px) {
+
+  /* ================
+   *  Navigation    
+   * ================*/
+  .desktop-menu-overlay--row {
+	display: none;
+  }
+  .nav-center {
+    display: none;
+  }
+  .nav-left,
+  .nav-right {
+    width: 50%;
+  }
+  .nav-right {
+	justify-content: flex-end;
+	padding-right: 30px;
+  }
+  .desktop-menu-burger-close {
+    top: 100px;
+	font-size: 22px;
+  }
+  .mobile-menu-overlay--row {
+	display: flex;
+  }
+  .store-message p {
+    max-width: 75%;
+	  font-size: 14px;
+  }
+  /* ================
+   *  Homepage    
+   * ================*/
+
+	
+}
+
+
+/* Best for Site Structure */
+@media only screen and (max-width: 800px) {
+
+}

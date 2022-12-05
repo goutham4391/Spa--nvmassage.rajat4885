@@ -1,0 +1,41 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 13 Nov 2022 20:13:43 at https://nvmassageandwellness.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://nvmassageandwellness.com/ -O1 "C:\Users\RAJAT SINGH\OneDrive\Desktop\Internship myknot\Day23\Web112\Site112" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+20:14:02	Error: 	"Not Found" (404) at link https://nvmassageandwellness.com/<br /><b>Warning</b>:  Use of undefined constant THEME_DIR - assumed 'THEME_DIR' (this will throw an Error in a future version of PHP) in <b>/home/customer/www/nvmassageandwellness.com/public_html/wp-content/themes/nvmaw/header.php</b> on line <b>17</b><br />THEME_DIR/path/favicon.ico (from https://nvmassageandwellness.com/)
+20:14:02	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nvmassageandwellness.com/xmlrpc.php (from https://nvmassageandwellness.com/)
+20:14:06	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nvmassageandwellness.com/xmlrpc.php?rsd (from https://nvmassageandwellness.com/)
+20:14:06	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nvmassageandwellness.com/wp-includes/wlwmanifest.xml (from https://nvmassageandwellness.com/)
+20:14:07	Warning: 	Retry after error -5 (error:00000001:lib(0):func(0):reason(1)) at link https://code.tidio.co:443/wv5w8bjj7ng0hvujtfnafaje1laqdq57.js (from https://nvmassageandwellness.com/)
+20:14:07	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nvmassageandwellness.com/wp-content/uploads/2022/01/cropped-nv-logo.png (from https://nvmassageandwellness.com/)
+20:14:22	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nvmassageandwellness.com/xmlrpc.php (from https://nvmassageandwellness.com/)
+20:14:22	Error: 	"Not Found" (404) at link https://nvmassageandwellness.com/wp-content/plugins/divi-builder/images/images/subscribe-loader.gif (from https://nvmassageandwellness.com/wp-content/plugins/divi-builder/includes/builder/styles/frontend-builder-plugin-style.unified.css?ver=4.9.10)
+20:14:22	Error: 	"Not Found" (404) at link https://nvmassageandwellness.com/wp-content/plugins/divi-builder/images/images/preloader.gif (from https://nvmassageandwellness.com/wp-content/plugins/divi-builder/includes/builder/styles/frontend-builder-plugin-style.unified.css?ver=4.9.10)
+20:14:22	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nvmassageandwellness.com/xmlrpc.php?rsd (from https://nvmassageandwellness.com/)
+20:14:22	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nvmassageandwellness.com/wp-includes/wlwmanifest.xml (from https://nvmassageandwellness.com/)
+20:14:22	Warning: 	Retry after error -4 (Incorrect length (32385 Bytes, 393155 expected)) at link https://nvmassageandwellness.com/wp-content/uploads/2021/09/carmen-gonzalez-aSGk2WzG6fM-unsplash-scaled.jpg (from https://nvmassageandwellness.com/wp-content/et-cache/11/et-core-unified-11-1667333293862.min.css)
+20:14:23	Warning: 	Retry after error -5 (error:00000001:lib(0):func(0):reason(1)) at link https://code.tidio.co:443/wv5w8bjj7ng0hvujtfnafaje1laqdq57.js (from https://nvmassageandwellness.com/)
+20:14:23	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nvmassageandwellness.com/wp-content/uploads/2022/01/cropped-nv-logo.png (from https://nvmassageandwellness.com/)
+20:14:23	Error: 	"Not Found" (404) at link https://nvmassageandwellness.com/become-a-member/<br /><b>Warning</b>:  Use of undefined constant THEME_DIR - assumed 'THEME_DIR' (this will throw an Error in a future version of PHP) in <b>/home/customer/www/nvmassageandwellness.com/public_html/wp-content/themes/nvmaw/header.php</b> on line <b>17</b><br />THEME_DIR/path/favicon.ico (from https://nvmassageandwellness.com/become-a-member/)
+20:14:23	Warning: 	Moved Permanently for https://nvmassageandwellness.com/?p=679
+20:14:23	Warning: 	File has moved from https://nvmassageandwellness.com/?p=679 to https://nvmassageandwellness.com/become-a-member/
+20:14:24	Error: 	"Not Found" (404) at link https://nvmassageandwellness.com/enhancements/<br /><b>Warning</b>:  Use of undefined constant THEME_DIR - assumed 'THEME_DIR' (this will throw an Error in a future version of PHP) in <b>/home/customer/www/nvmassageandwellness.com/public_html/wp-content/themes/nvmaw/header.php</b> on line <b>17</b><br />THEME_DIR/path/favicon.ico (from https://nvmassageandwellness.com/enhancements/)
+20:14:24	Warning: 	Moved Permanently for https://nvmassageandwellness.com/?p=685
+20:14:24	Warning: 	File has moved from https://nvmassageandwellness.com/?p=685 to https://nvmassageandwellness.com/enhancements/
+20:14:24	Error: 	"Not Found" (404) at link https://nvmassageandwellness.com/about-us/<br /><b>Warning</b>:  Use of undefined constant THEME_DIR - assumed 'THEME_DIR' (this will throw an Error in a future version of PHP) in <b>/home/customer/www/nvmassageandwellness.com/public_html/wp-content/themes/nvmaw/header.php</b> on line <b>17</b><br />THEME_DIR/path/favicon.ico (from https://nvmassageandwellness.com/about-us/)
+20:14:24	Warning: 	Moved Permanently for https://nvmassageandwellness.com/?p=694
+20:14:24	Warning: 	File has moved from https://nvmassageandwellness.com/?p=694 to https://nvmassageandwellness.com/about-us/
+20:14:24	Error: 	"Not Found" (404) at link https://nvmassageandwellness.com/massage-saunas-facials/<br /><b>Warning</b>:  Use of undefined constant THEME_DIR - assumed 'THEME_DIR' (this will throw an Error in a future version of PHP) in <b>/home/customer/www/nvmassageandwellness.com/public_html/wp-content/themes/nvmaw/header.php</b> on line <b>17</b><br />THEME_DIR/path/favicon.ico (from https://nvmassageandwellness.com/massage-saunas-facials/)
+20:14:24	Warning: 	Moved Permanently for https://nvmassageandwellness.com/?p=718
+20:14:24	Warning: 	File has moved from https://nvmassageandwellness.com/?p=718 to https://nvmassageandwellness.com/massage-saunas-facials/
+20:14:24	Error: 	"No data (connection closed)" (-4) after 2 retries at link https://nvmassageandwellness.com/xmlrpc.php (from https://nvmassageandwellness.com/)
+20:14:24	Error: 	"No data (connection closed)" (-4) after 2 retries at link https://nvmassageandwellness.com/xmlrpc.php?rsd (from https://nvmassageandwellness.com/)
+20:14:24	Error: 	"No data (connection closed)" (-4) after 2 retries at link https://nvmassageandwellness.com/wp-includes/wlwmanifest.xml (from https://nvmassageandwellness.com/)
+20:14:25	Error: 	"error:00000001:lib(0):func(0):reason(1)" (-5) after 2 retries at link https://code.tidio.co:443/wv5w8bjj7ng0hvujtfnafaje1laqdq57.js (from https://nvmassageandwellness.com/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 42 seconds : 101 links scanned, 74 files written (8141571 bytes overall) [5999440 bytes received at 142843 bytes/sec], 3118658 bytes transferred using HTTP compression in 52 files, ratio 22%, 4.7 requests per connection
+(11 errors, 19 warnings, 0 messages)

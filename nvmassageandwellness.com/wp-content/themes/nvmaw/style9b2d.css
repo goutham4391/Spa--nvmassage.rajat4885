@@ -1,0 +1,724 @@
+/*
+Theme Name: Napa Valley Massage & Wellness
+Author: James Rogers
+Author URI: https://www.napacreativeco.com
+Description: A theme created for Napa Valley Massage & Wellness Spa.
+Tags: massage, wellness, spa
+Version: 1
+Requires PHP: 7.0
+Text Domain: nvmaw
+*/
+
+/* ===============
+      Globals
+  ================ */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Karla', sans-serif !important;
+  letter-spacing: 0px !important;
+  font-weight: 900 !important;
+}
+p {
+  font-family: 'Montserrat', sans-serif !important;
+}
+button {
+  font-family: 'Karla', sans-serif !important;
+  cursor: pointer !important;
+  z-index: 3;
+}
+a.button {
+	cursor: pointer !important;
+}
+.menu-item a,
+.et_pb_button {
+  font-family: 'Karla', sans-serif !important;
+}
+select {
+  padding: 10px 14px;
+  /* Here's the code we need */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+   -o-appearance: none;
+    appearance: none;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+}
+.woocommerce-ordering::after {
+  content: '\f0ca' !important;
+  font-family: 'FontAwesome' !important;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -30px;
+  z-index: 0;
+  color: #999999 !important;
+}
+
+/* ===============
+      Resets
+  ================ */
+ul { list-style: none; }
+a { text-decoration: none; }
+
+/* ===============
+     NCC Popup
+  ================ */
+.ncc-popup { 
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.5s;
+  z-index: 99999;
+  float: left;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.ncc-popup .row {
+  width: 400px;
+  max-width: 80%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  position: relative;
+  background: #fff;
+}
+.ncc-popup .image {
+  width: 100%;
+  height: 200px;
+  background: url('../../uploads/2021/03/baskets-x-sm.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+.ncc-popup h2 {
+  padding: 0px 40px 0px 0px;
+}
+.ncc-popup p {
+  padding: 0px 40px 20px 0px;
+}
+.ncc-popup a {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.ncc-popup .close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.ncc-popup .close svg {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============
+     Social Icons
+  ================ */
+.social-icons-shortcode {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-icons-contact-page {
+  background: #000 !important;
+  width: auto !important;
+}
+
+
+/* ===============
+      Navigation
+  ================ */
+.navigation {
+  width: 100vw;
+  max-width: 100vw;
+  height: 80px;
+}
+.navigation__row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+.navigation__cell {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navigation__cell ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav-left {
+  max-width: 400px;
+  padding-left: 30px;
+}
+.logo {
+  width: 95%;
+  max-width: 250px !important;
+}
+.nav-center {
+  width: 50%;
+  text-align: left;
+  position: relative;
+}
+.menu-item {
+  margin-right: 20px;
+}
+.menu-item a {
+  color: #000;
+}
+.menu-item a:hover {
+  border-bottom: 2px solid #000;
+}
+.nav-right {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Sub Menu */
+.sub-menu {
+  padding: 10px 20px 30px 30px;
+}
+.sub-menu li {
+  padding-top: 15px;
+}
+.main-nav { position: relative; }
+
+.main-nav ul ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    z-index: 99999;
+    width: 180px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+.main-nav ul > .menu-item-has-children > a::after {
+    content: "\f107";
+    padding-left: 6px;
+    font-size: 14px;
+    font-family: 'FontAwesome';
+}
+ul.sub-menu > .menu-item-has-children > a::after {
+    content: "►";
+    padding-left: 3px;
+}
+/* Burger Menus */
+.fa-bars,
+.fa-times {
+  cursor: pointer;
+}
+/* Dropdown Sub menu */
+.menu-item {
+	white-space: nowrap;
+}
+.menu-item .external-link::after {
+  content: '\f08e';
+  font-size: 12px;
+  padding: 5px 0px 0px 10px;
+  font-family: 'FontAwesome';
+  color: #666666 !important;
+}
+.menu-item a.external-link::after:hover {
+  text-decoration: none !important;
+}
+/* Nav Right */
+.nav-right button {
+  padding: 8px 12px;
+  background: #000;
+  color: #fff;
+  white-space: nowrap;
+}
+.nav-right i {
+  padding-left: 30px;
+  font-size: 22px;
+}
+
+/* ======================
+ *  Desktop Overlay Menu 
+ * ====================== */
+.desktop-menu-burger-close {
+  top: 80px;
+  right: 25px;
+  position: fixed;
+  z-index: 9991;
+  font-size: 22px;
+}
+.desktop-menu-overlay {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+}
+/* Overlay Left */
+.desktop-overlay-inner {
+  width: 80%;
+  max-width: 1200px !important;
+  margin: 100px auto 0px auto;
+}
+.desktop-menu-overlay--row {
+  display: flex;
+  flex-direction: row;
+}
+.desktop-menu-overlay--cell {
+  width: 50%;
+}
+.desktop-menu-overlay .logo {
+  max-width: 20%;
+  margin-bottom: 40px;
+}
+/* Overlay Right */
+.desktop-overlay-inner-right {
+  background: #eaeaea;
+  height: 100%;
+  width: 30%;
+  padding: 100px 20px 0px 60px;
+}
+.desktop-overlay-inner-right button {
+  margin-top: 60px;
+  padding: 8px 12px;
+  background: #000;
+  color: #fff;
+  white-space: nowrap;
+}
+/* Mobile */
+.mobile-menu-overlay--row {
+	display: none;
+}
+/* Overlay Footer */
+.desktop-overlay-footer {
+  border-top: 2px solid #eaeaea;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  margin-top: 60px;
+}
+.desktop-menu-overlay--cell ul {
+  padding: 0;
+}
+.desktop-menu-overlay--cell li {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.desktop-overlay-left {
+  width: 30%;
+}
+.desktop-overlay-right {
+  width: 70%;
+}
+.desktop-overlay-footer i {
+  font-size: 20px;
+  margin-right: 20px
+
+}
+.desktop-overlay-footer a i {
+  color: #000;
+}
+/* ===================
+ *  Mobile Menu 
+ * ================= */
+.mobile-menu-overlay--row li {
+	margin-bottom: 15px;
+}
+.mobile-menu-overlay--row li a {
+	font-size: 24px;
+}
+.mobile-menu-overlay--row button {
+	font-size: 16px;
+	padding: 12px 15px;
+	background: #000000;
+	color: #ffffff;
+}
+
+
+
+
+/* Store Message */
+.store-message {
+  display: none;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  max-width: 100vw;
+  text-align: center;
+  padding: 3px;
+  font-size: 14px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.store-message i {
+  color: #fff;
+  padding-left: 15px;
+  position: absolute;
+  right: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ======================
+      Homepage > Hero
+  ====================== */
+.hero-blurb button,
+.white-button {
+  padding: 8px 12px;
+  background: #000000;
+  color: #fff;
+  white-space: nowrap;
+  outline: 0;
+  border: 0px solid #fff;
+  border-radius: 3px;
+  font-size: 22px;
+}
+.et_pb_blurb_description ul.home-hero--categories {
+	list-style: none !important;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.home-hero--categories li a {
+	list-style: none !important;
+	margin: 5px 12px !important;
+}
+/* "The Best Therapists" Slider > Mobile */
+.mobile-slider-home.et_pb_row_4 {
+	background-attachment: fixed !important;
+}
+
+h4.review-heading { display: none !important; }
+
+/* Homepage Products */
+.homepage-products .product {
+  max-width: 46%;
+}
+.homepage-products .products {
+  margin-left: 30px;
+}
+.homepage-products .woocommerce-loop-product__title,
+.homepage-products .price {
+  color: #000 !important;
+}
+.homepage-products .price {
+  font-weight: 600 !important;
+}
+
+
+/* ==========
+      Shop
+  =========== */
+.shop-header .et_pb_row {
+  display: flex;
+}
+.shop-header .et_pb_section {
+  padding: 0 !important;
+}
+.shop-header .et_pb_newsletter_fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
+}
+.shop-header-categories li.product-category {
+  list-style: none !important;
+  max-width: 15% !important;
+}
+.shop-header-categories li.product-category a,
+.category-header-products li.type-product a {
+  color: #000 !important;
+}
+.category-header-products li a .amount {
+  display: none;
+}
+.shop-header-categories .woocommerce-loop-category__title {
+  text-align: center !important;
+}
+/* Shop Category Count */
+.shop-header-categories li.product-category mark {
+  background: transparent !important;
+  color: #999999 !important;
+  display: none !important;
+}
+.shop-header .et_pb_newsletter {
+  justify-content: center !important;
+}
+.et_pb_newsletter_button_wrap {
+  flex-basis: 60px !important;
+}
+/* Main Shop Page */
+#sidebar { display: none !important; }
+.quantity { padding: 10px !important; }
+.products .price {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #666666 !important;
+  max-width: 10% !important;
+  position: absolute;
+  right: 3px;
+  bottom: 0px;
+  border-bottom: 2px solid #666666;
+}
+.products .woocommerce-loop-product__title,
+.products .price {
+  color: #000 !important;
+}
+h2.woocommerce-loop-product__title {
+  font-size: 20px;
+  max-width: 70% !important;
+  margin: 0 !important;
+}
+ul.products a.button {
+  display: none;
+}
+li.product {
+  margin-right: 40px !important;
+}
+li.product img {
+  margin: 0 !important;
+}
+.woocommerce-result-count {
+  margin-left: 10% !important;
+}
+.woocommerce-ordering {
+  margin-right: 10% !important;
+}
+.woocommerce-result-count {
+  font-size: 14px;
+}
+/* Squeezer */
+.product,
+.woocommerce-breadcrumb,
+.woocommerce-notices-wrapper,
+.products,
+.woocommerce-products-header,
+.shop-footer,
+.footer-copyright {
+  max-width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Single Product Page */
+.product {
+  margin-top: 10px !important;
+}
+.woocommerce-breadcrumb {
+  margin-top: 50px !important;
+}
+.woocommerce-breadcrumb a {
+  color: #666666 !important;
+}
+
+/* Category Page */
+.category-header-products .et_pb_column {
+  width: 100% !important;
+}
+.category-header-products .products {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.category-header-products ul {
+  max-width: 80% !important;
+}
+.category-header-products li {
+  list-style: none !important;
+  max-width: 15% !important;
+}
+.category-header-products h2.woocommerce-loop-product__title {
+  font-size: 20px;
+  text-align: center !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+.category-header-products .et_pb_row  {
+  display: flex !important;
+  justify-content: center !important;
+}
+.category-header-products li.product {
+  margin-right: 40px !important;
+  width: 100% !important;
+}
+
+
+/* Shop Footer */
+.shop-footer .et_pb_row {
+  display: flex;
+  width: 100%;
+}
+.footer-copyright {
+  margin-top: 30px;
+}
+.footer-copyright p {
+  font-size: 12px !important;
+}
+.shop-footer .et_pb_column {
+  width: 100%;
+}
+.shop-footer .et_pb_widget_area_left {
+  border-right: 0px !important;
+}
+.shop-footer .et_pb_module > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.shop-footer .et_pb_section {
+  padding: 0 !important;
+}
+.shop-footer li a,
+.shop-footer i a {
+  color: #666666 !important;
+}
+.footer-copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer-copyright-cell {
+  width: 50%;
+}
+.footer-copyright-cell i {
+  padding-right: 15px;
+  color: #000;
+}
+/* Product Page */
+.single-product-container {
+
+}
+.product .et_builder_inner_content {
+  margin: 0 !important;
+}
+/* Widen Product Description */
+.et-db #et-boc .et-l .et_builder_inner_content {
+  min-width: 100% !important;
+  margin-right: 0 !important;
+}
+
+.shop-header .et_pb_wc_gallery {
+  width: 100% !important;
+}
+.entry-summary button {
+  padding: 8px 12px;
+  background: #000 !important;
+  color: #fff !important;
+  white-space: nowrap;
+}
+.entry-summary .price {
+  color: #000 !important;
+}
+.product_meta a {
+  color: #666 !important;
+  font-family: sans-serif;
+}
+ul.tabs,
+ul.wc-tabs {
+  display: none !important;
+}
+.payment-option-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.payment-option-icons i {
+  font-size: 30px;
+  color: #999999;
+  margin-right: 25px;
+}
+.woocommerce-product-gallery .flex-control-nav {
+  display: none !important;
+}
+.woocommerce-Tabs-panel--description h2 {
+  display: none !important;
+}
+.woocommerce-Tabs-panel--description .et-boc h2 {
+  display: block !important;
+}
+
+/* ==============
+     About Page
+   ============== */
+.about-footer-mailchimp .et_pb_newsletter_fields {
+  justify-content: center !important;
+}
+.about-footer-mailchimp .et_pb_newsletter_fields i {
+  color: #000 !important;
+}
+
+
+
+
+
+
+
+
+/* ==============
+   Contact Page
+   ============== */
+
+
+
+/* ================
+  Enhancements Page
+  ================= */
+.enhancements-contact .et_pb_newsletter_button_wrap {
+  display: flex;
+  align-self: center;
+  text-align: center;
+}
+.enhancements-contact .et_pb_newsletter_button_wrap {
+  flex-basis: auto !important;
+}
+
+
+
+
+
+.footer-newsletter button {
+	padding: 12px 15px;
+	border: 3px solid #000000;
+	border-radius: 3px;
+}
